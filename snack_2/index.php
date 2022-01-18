@@ -16,20 +16,26 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
 
 $name = $_GET['name'];
 $age = $_GET['age'];
+$mail = $_GET['mail'];
 
 $GrantedName = false;
 if (strlen($name) > 3) {
     $GrantedName = true;
-}
+};
 
 $GrantedAge = false;
 if (is_numeric($age)){
     $GrantedAge = true;
-}
+};
+
+$GrantedMail = false;
+if(strpos($mail, '@') !== false && strpos($mail, '.') !== false){
+    $GrantedMail = true;
+};
 
 
 
-if ($GrantedName == true && $GrantedAge = true){
+if ($GrantedName == true && $GrantedAge == true &&  $GrantedMail == true){
     echo '<h1> Access Granted</h1>';
 }else {
     echo '<h1> Access Denied</h1>';
