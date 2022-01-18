@@ -29,7 +29,7 @@ if (is_numeric($age)){
 };
 
 $GrantedMail = false;
-if(strpos($mail, '@') !== false && strpos($mail, '.') !== false){
+if(strpos($mail, '@') && strpos($mail, '.') ){
     $GrantedMail = true;
 };
 
