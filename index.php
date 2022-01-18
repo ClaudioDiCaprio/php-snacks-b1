@@ -39,13 +39,13 @@ Olimpia Milano - Cantù | 55-60 -->
         ],
     ];
 
-    // for ($i = 0; $i < count($stage); $i++) {
-    //     echo "<p> { $stage[$i]['home']} { $stage[$i]['guest']} - { $stage[$i]['homePoints']} {$stage[$i]['guestPoints']} </p>";
-    // };
-
     for ($i = 0; $i < count($stage); $i++) {
-        echo '<p>' . $stage[$i]['home'] . ' - ' . $stage[$i]['guest'] . ' : ' . $stage[$i]['homePoints'] . ' - ' . $stage[$i]['guestPoints'] . '</p>';
+        echo "<p> {$stage[$i]["home"]} {$stage[$i]["guest"]} '-' {$stage[$i]["homePoints"]} {$stage[$i]["guestPoints"]} </p>";
     };
+
+    // for ($i = 0; $i < count($stage); $i++) {
+    //     echo '<p>' . $stage[$i]['home'] . ' - ' . $stage[$i]['guest'] . ' : ' . $stage[$i]['homePoints'] . ' - ' . $stage[$i]['guestPoints'] . '</p>';
+    // };
 
     ?>
 
